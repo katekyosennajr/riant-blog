@@ -1,4 +1,5 @@
 import './App.css';
+import Articles from './Articles';
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
