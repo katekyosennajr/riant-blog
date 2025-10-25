@@ -41,7 +41,7 @@ export default function Articles() {
 
   // delete artikel
   async function handleDelete(id) {
-    if (!confirm('Yakin ingin menghapus artikel ini?')) return;
+    if (!window.confirm('Yakin ingin menghapus artikel ini?')) return;
     try {
       await api.delete(`/api/articles/${id}`);
       setArticles(prev => prev.filter(a => a._id !== id));
